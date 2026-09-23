@@ -1,7 +1,10 @@
 def add_to_front(items, value):
-       slice = items[:]
-       list_value = [value]
-       new_list = list_value + slice
-       return new_list
+    #    slice = items[:]
+    #    list_value = [value]
+    #    new_list = list_value + 
+       items = [value] + items
+       return items
 
-print(add_to_front([1, 2, 3], 6))        
+original = [1, 2, 3]
+print(original)
+print(add_to_front(original, 6))        
