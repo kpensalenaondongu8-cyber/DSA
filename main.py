@@ -3,7 +3,6 @@ def summarise_amounts(raw_values):
     rejected = 0
 
     for raw in raw_values:
-          
         try:
             all = int(raw)
             if all < 0:
@@ -17,3 +16,5 @@ def summarise_amounts(raw_values):
 
 result = ["10", " 5 ", "bad", "-3", "0", ""]
 print(summarise_amounts(result))
+
+
