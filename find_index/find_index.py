@@ -8,3 +8,4 @@ def find_index(items, target):
 
 all = find_index(["hello", "how", "you", "doing", "dear"], "you")
 print(all)
+
