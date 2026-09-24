@@ -5,14 +5,13 @@ def summarise_amounts(raw_values):
     for raw in raw_values:
           
         try:
-            total += int(raw)
-            if total < 0:
-                rejected += total
+            all = int(raw)
+            if all < 0:
+                rejected += 1
             else:
-                total += int(raw)    
-            return total
+                total += all   
         except ValueError:
-            rejected += raw
+            rejected += 1
 
     return {"total": total, "rejected": rejected}
 
