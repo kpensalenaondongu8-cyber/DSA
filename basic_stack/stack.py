@@ -3,9 +3,11 @@ def undo_last(actions):
    all = actions.copy()
    stack = stack+all
    rem = stack.pop()
-   return f"usual: {actions} updated:{stack} removed: {rem}"
+   return rem, stack
 
 
 
 actions = ["type", "delete", "bold"]  
-print(undo_last(actions))
+undone, remaining = undo_last(actions)
+print(undone)
+print(remaining)
