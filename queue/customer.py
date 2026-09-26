@@ -4,5 +4,8 @@ def serve_next(line):
     removed = line.popleft()
     return removed, queue
 
-line = serve_next(deque(["Alice", "Bob", "Carol"]))
+line = serve_next(["Alice", "Bob", "Carol"])
 print(line)
+
+
+
